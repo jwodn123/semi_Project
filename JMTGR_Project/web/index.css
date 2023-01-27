@@ -1,0 +1,540 @@
+
+@font-face {
+font-family: 'CookieRun-Regular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'S-CoreDream-4Regular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Bazzi';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
+body{
+  margin : 0;
+  padding: 0;
+  background : white;
+}
+header {
+   margin : 0;
+   padding: 0;
+   width: 100%;
+   height: 940px;
+   margin-top: 65px;
+   background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.75)), url("resources/images/11.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+nav.food
+{
+    position: absolute;
+    top : 3%;
+    right: 0;
+    left: -1250px;
+    width: 600px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+nav.food a
+{
+    position: relative;
+    width: 500px;
+    display: table-cell;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Bazzi';
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+nav.food a:before, nav.food a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav.food a:before
+{
+    top: 0;
+    left: 20px;
+    width: 6px;
+    height: 6px;
+}
+
+nav.food a:after
+{
+    top: 5px;
+    left: 28px;
+    width: 4px;
+    height: 4px
+}
+
+nav.food a:nth-child(1):before
+{
+    background-color: black;
+}
+
+nav.food a:nth-child(1):after
+{
+    background-color: black;
+}
+
+nav.food a:nth-child(2):before
+{
+    background-color: black;
+}
+
+nav.food a:nth-child(2):after
+{
+    background-color: black;
+}
+
+nav.food a:nth-child(3):before
+{
+    background-color: black;
+}
+
+nav.food a:nth-child(3):after
+{
+    background-color: black;
+}
+
+
+#indicator1
+{
+    position: absolute;
+    left: 48px;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: none;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav.food a:hover
+{
+  color: black;
+  text-shadow: 1px 0 #FF7171, 0 1px #FF7171, 1px 0 #FF7171, 0 1px #FF7171;
+}
+
+nav.food a:hover:before, nav.food a:hover:after
+{
+    transform: scale(1);
+}
+
+nav.food a:nth-child(1):hover ~ #indicator1
+{
+    left: 8%;
+    background: linear-gradient(130deg, black, black);
+}
+
+nav.food a:nth-child(2):hover ~ #indicator1
+{
+    left: 40%;
+    background: linear-gradient(130deg, black, black);
+}
+
+nav.food a:nth-child(3):hover ~ #indicator1
+{
+    left: 74%;
+    background: linear-gradient(130deg, black, black);
+}
+.mySlides {
+  display:none;
+}
+
+.logo {
+   position: relative;
+   left: -300px;
+   top : -500px;
+   font-size: 80px;
+   color : white;
+   font-family: 'Bazzi';
+}
+.logo .locon {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 23px;
+}
+.main img {
+   position: relative;
+   left: 400px;
+   top : -60px;
+   width: 800px;
+   height: 500px;
+   border: 3px solid white;
+
+}
+.locon {
+   color: white;
+   font-size: 50px;
+}
+nav.login
+{
+    position: absolute;
+      top : 3%;
+    right: 0;
+    left: 1200px;
+    width: 600px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+nav.login a
+{
+    position: relative;
+    width: 550px;
+    display: table-cell;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Bazzi';
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+nav.login a:before, nav.login a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav.login a:before
+{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+nav.login a:after
+{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+nav.login a:nth-child(1):before
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(1):after
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(2):before
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(2):after
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(3):before
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(3):after
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(4):before
+{
+    background-color: black;
+}
+
+nav.login a:nth-child(4):after
+{
+    background-color: black;
+}
+
+#indicator
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: none;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav.login a:hover
+{
+  color: black;
+  text-shadow: 1px 0 #FF7171, 0 1px #FF7171, 1px 0 #FF7171, 0 1px #FF7171;
+}
+
+nav.login a:hover:before, nav.login a:hover:after
+{
+    transform: scale(1);
+}
+
+nav.login a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, black, black);
+}
+
+nav.login a:nth-child(2):hover ~ #indicator
+{
+    left: 31.5%;
+    background: linear-gradient(130deg, black, black);
+}
+
+nav.login a:nth-child(3):hover ~ #indicator
+{
+    left: 54%;
+    background: linear-gradient(130deg, black, black);
+}
+nav.login a:nth-child(4):hover ~ #indicator
+{
+    left: 78%;
+    background: linear-gradient(130deg, black, black);
+}
+
+h3 {
+   font-family: 'Bazzi';
+   font-size: 50px;
+   color : black;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 450px 450px 450px;
+   grid-template-rows: 450px 450px 450px;
+   margin-left: 14%;
+   font-family: 'Bazzi';
+   opacity : 0.75;
+}
+.one {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   width: 100%;
+   height : 100%;
+   background-image: url('resources/images/밥.jpg');
+   background-size: cover;
+   border: 1px solid white;
+}
+
+ h1.title {
+    color : white;
+    padding-top : 10px;
+    text-align : center;
+    font-size: 30px;
+}
+.two {
+     width: 300px;
+     height: 300px;
+     margin-left : 7px;
+     width: 100%;
+     height : 100%;
+     background-image: url('resources/images/삼계탕.jpg');
+     background-size: cover;
+}
+.three {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    height : 100%;
+    background-image: url('resources/images/면.jpg');
+    background-size: cover;
+    margin-top: 7px;
+}
+.four {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+    height : 100%;
+    background-image: url('resources/images/치돈.jfif');
+    background-size: cover;
+}
+
+.five  {
+   margin-top: 14px;
+   margin-left: 7px;
+   width: 100%;
+   height : 98.3%;
+   background-image: url('resources/images/갈비찜.jfif');
+   background-size: cover;
+}
+.six  {
+   margin-top: 14px;
+   margin-left: 14px;
+   width: 98.5%;
+   height : 98.3%;
+   background-image: url('resources/images/카스테라.jpg');
+   background-size: cover;
+}
+.view {
+  background-color: #FFFFFF;
+  border: none;
+  color: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'CookieRun-Regular';
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.view:before,
+.view:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.view:before {
+  border-color: #FFFFFF;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.view:after {
+  border-bottom-width: 2px;
+  border-color: #FFFFFF;
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+.view:hover,
+.view.hover {
+  background-color: #FFFFFF;
+}
+.view:hover:before,
+.view.hover:before,
+.view:hover:after,
+.view.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 715px 715px ;
+  grid-template-rows: 350px 350px ;
+  margin-left: 14%;
+  font-family:'CookieRun-Regular';
+}
+
+.myrecipe {
+  width: 90%;
+  height : 90%;
+  background-image: url('resources/images/도마.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content {
+  text-shadow: 2px 2px 2px #666666;
+  color : black;
+  text-align : left;
+  font-size: 35px;
+  font-family: 'Bazzi';
+}
+.col {
+  width: 300px;
+  margin-top : 30px;
+  margin-right: 600px;
+}
+
+.cont1 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.cont1 a {
+  position: relative;
+  left: 500px;
+  top : 100px;
+  text-decoration:none;
+  color : black;
+}
+.cont1 a:hover{
+  color: #FF7171;
+}
+
+.content2 {
+  text-shadow: 2px 2px 2px #666666;
+  color : black;
+  padding-top : 10px;
+  text-align : right;
+  margin-right: 70px;
+  font-size: 35px;
+  font-family: 'Bazzi';
+}
+
+.cont2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.cont2 a {
+  position: relative;
+  left: -500px;
+  top : 100px;
+  text-decoration:none;
+  color : black;
+}
+
+.cont2 a:hover{
+  color: #FF7171;
+}
+.col2 {
+  width: 300px;
+  margin-top : 30px;
+  margin-left:  345px;
+}
+
+.mysquare {
+  width: 90%;
+  height : 90%;
+  background-image: url('resources/images/만남의광장.jpg');
+    background-size: cover;
+}
